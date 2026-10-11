@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodwagon - Food Delivery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="logo" href="#">
+          <img src="icons/logo.svg" alt="Foodwagon" />
+          <img src="icons/food.svg" alt="" class="logo-text" />
+          <img src="icons/waGon.svg" alt="" class="logo-text" />
+        </a>
+        <div class="deliver">
+          <b>Deliver to:</b><span class="ic" aria-hidden="true"></span
+          ><span>Current Location <b>Mohammadpur Bus Stand, Dhaka</b></span>
+        </div>
+        <div class="nav-right">
+          <a class="search-link" href="#order"><span class="ic" aria-hidden="true"></span><span>Search Food</span></a>
+          <a class="btn-login" href="#"><span class="ic" aria-hidden="true"></span>Login</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Are you starving?</h1>
+          <p>Within a few clicks, find meals that are accessible near you</p>
+          <div class="search-card" id="order">
+            <input class="order-mode" type="radio" name="order-mode" id="delivery" checked /><input
+              class="order-mode"
+              type="radio"
+              name="order-mode"
+              id="pickup"
+            />
+            <div class="tabs">
+              <label class="tab active" for="delivery"><span class="ic" aria-hidden="true"></span>Delivery</label
+              ><label class="tab" for="pickup"><span class="ic" aria-hidden="true"></span>Pickup</label>
+            </div>
+            <div class="search-row">
+              <label class="input-wrap"
+                ><span class="ic" aria-hidden="true"></span
+                ><input
+                  type="text"
+                  placeholder="Enter Your Address"
+                  aria-label="Enter Your Address"
+                  autocomplete="street-address" /></label
+              ><a class="btn-orange btn-find" href="#restaurants"
+                ><span class="ic" aria-hidden="true"></span>Find Food</a
+              >
+            </div>
+          </div>
+        </div>
+        <img class="hero-img" src="images/hero-bowl.png" alt="Food bowl" />
+      </div>
+    </section>
+
+    <section class="container discount">
+      <div class="disc-card">
+        <div class="disc-photo">
+          <img src="images/deal-salad.png" alt="Greys Vage" loading="lazy" /><span class="badge-off"
+            ><strong>15</strong><span><b>%</b><span>Off</span></span></span
+          >
+        </div>
+        <div class="disc-info">
+          <h4>Greys Vage</h4>
+          <em>6 Days Remaining</em>
+        </div>
+      </div>
+      <div class="disc-card">
+        <div class="disc-photo">
+          <img src="images/deal-pasta.png" alt="Greys Vage" loading="lazy" /><span class="badge-off"
+            ><strong>10</strong><span><b>%</b><span>Off</span></span></span
+          >
+        </div>
+        <div class="disc-info">
+          <h4>Greys Vage</h4>
+          <em>6 Days Remaining</em>
+        </div>
+      </div>
+      <div class="disc-card">
+        <div class="disc-photo">
+          <img src="images/deal-vegetables.png" alt="Greys Vage" loading="lazy" /><span class="badge-off"
+            ><strong>25</strong><span><b>%</b><span>Off</span></span></span
+          >
+        </div>
+        <div class="disc-info">
+          <h4>Greys Vage</h4>
+          <em>7 Days Remaining</em>
+        </div>
+      </div>
+      <div class="disc-card">
+        <div class="disc-photo">
+          <img src="images/deal-soup.png" alt="Greys Vage" loading="lazy" /><span class="badge-off"
+            ><strong>20</strong><span><b>%</b><span>Off</span></span></span
+          >
+        </div>
+        <div class="disc-info">
+          <h4>Greys Vage</h4>
+          <em>8 Days Remaining</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="how">
+      <div class="container">
+        <h2 class="title">How does it work</h2>
+        <div class="how-grid">
+          <div class="step">
+            <div class="step-icon">
+              <img src="icons/location.svg" alt="" loading="lazy" />
+            </div>
+            <h4>Select location</h4>
+            <p>Choose the location where your food will be delivered.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <img src="icons/order.svg" alt="" loading="lazy" />
+            </div>
+            <h4>Choose order</h4>
+            <p>Check over hundreds of menus to pick your favorite food</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <img src="icons/payment.svg" alt="" loading="lazy" />
+            </div>
+            <h4>Pay advanced</h4>
+            <p>It's quick, safe, and simple. Select several methods of payment</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <img src="icons/meals.svg" alt="" loading="lazy" />
+            </div>
+            <h4>Enjoy meals</h4>
+            <p>Food is made and delivered directly to your home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="popular">
+      <h2 class="title">Popular items</h2>
+      <div class="grid-5">
+        <div class="food-card">
+          <img src="images/cheese-burger.png" alt="Cheese Burger" loading="lazy" />
+          <h4>Cheese Burger</h4>
+          <small><span class="ic" aria-hidden="true"></span>Burger Arena</small>
+          <div class="price">$3.88</div>
+          <a class="btn-coral" href="#order">Order Now</a>
+        </div>
+        <div class="food-card">
+          <img src="images/toffes-cake.png" alt="Toffe’s Cake" loading="lazy" />
+          <h4>Toffe’s Cake</h4>
+          <small><span class="ic" aria-hidden="true"></span>Top Sticks</small>
+          <div class="price">$4.00</div>
+          <a class="btn-coral" href="#order">Order Now</a>
+        </div>
+        <div class="food-card">
+          <img src="images/dancake.png" alt="Dancake" loading="lazy" />
+          <h4>Dancake</h4>
+          <small><span class="ic" aria-hidden="true"></span>Cake World</small>
+          <div class="price">$1.99</div>
+          <a class="btn-coral" href="#order">Order Now</a>
+        </div>
+        <div class="food-card">
+          <img src="images/crispy-sandwich.png" alt="Crispy Sandwitch" loading="lazy" />
+          <h4>Crispy Sandwitch</h4>
+          <small><span class="ic" aria-hidden="true"></span>Fastfood Dine</small>
+          <div class="price">$3.00</div>
+          <a class="btn-coral" href="#order">Order Now</a>
+        </div>
+        <div class="food-card">
+          <img src="images/thai-soup.png" alt="Thai  Soup" loading="lazy" />
+          <h4>Thai Soup</h4>
+          <small><span class="ic" aria-hidden="true"></span>Foody man</small>
+          <div class="price">$2.79</div>
+          <a class="btn-coral" href="#order">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="restaurants">
+      <h2 class="title">Featured Restaurants</h2>
+      <div class="grid-4">
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/foodworld.png" alt="Foodworld" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>20% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/foodworld-logo.png" alt="Foodworld logo" loading="lazy" />
+            <div>
+              <h4>Foodworld</h4>
+              <small><span class="ic" aria-hidden="true"></span>46</small>
+            </div>
+          </div>
+          <em class="chip closed">Opens tomorrow</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/pizzahub.png" alt="Pizzahub" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>15% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/pizzahub-logo.png" alt="Pizzahub logo" loading="lazy" />
+            <div>
+              <h4>Pizzahub</h4>
+              <small><span class="ic" aria-hidden="true"></span>40</small>
+            </div>
+          </div>
+          <em class="chip closed">Opens tomorrow</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/donuts-hut.png" alt="Donuts hut" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>10% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/donuts-logo.png" alt="Donuts hut logo" loading="lazy" />
+            <div>
+              <h4>Donuts hut</h4>
+              <small><span class="ic" aria-hidden="true"></span>20</small>
+            </div>
+          </div>
+          <em class="chip">Open Now</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/donuts-hut-cupcake.png" alt="Donuts hut" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>15% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/subway-logo.png" alt="Donuts hut logo" loading="lazy" />
+            <div>
+              <h4>Donuts hut</h4>
+              <small><span class="ic" aria-hidden="true"></span>50</small>
+            </div>
+          </div>
+          <em class="chip">Open Now</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/ruby-tuesday.png" alt="Ruby Tuesday" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>10% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/ruby-logo.png" alt="Ruby Tuesday logo" loading="lazy" />
+            <div>
+              <h4>Ruby Tuesday</h4>
+              <small><span class="ic" aria-hidden="true"></span>26</small>
+            </div>
+          </div>
+          <em class="chip">Open Now</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/kuakata-chicken.png" alt="Kuakata Fried Chicken" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>25% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/kfc-logo.png" alt="Kuakata Fried Chicken logo" loading="lazy" />
+            <div>
+              <h4>Kuakata Fried Chicken</h4>
+              <small><span class="ic" aria-hidden="true"></span>53</small>
+            </div>
+          </div>
+          <em class="chip">Open Now</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/red-square.png" alt="Red Square" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>10% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/red-square-logo.png" alt="Red Square logo" loading="lazy" />
+            <div>
+              <h4>Red Square</h4>
+              <small><span class="ic" aria-hidden="true"></span>45</small>
+            </div>
+          </div>
+          <em class="chip">Open Now</em>
+        </div>
+        <div class="rest-card">
+          <div class="rest-photo">
+            <img class="rest-img" src="images/taco-bell.png" alt="Taco Bell" loading="lazy" />
+            <div class="rest-tags">
+              <span><span class="ic" aria-hidden="true"></span>10% off</span
+              ><span><span class="ic" aria-hidden="true"></span>Fast</span>
+            </div>
+          </div>
+          <div class="rest-body">
+            <img class="rest-logo" src="images/taco-bell-logo.png" alt="Taco Bell logo" loading="lazy" />
+            <div>
+              <h4>Taco Bell</h4>
+              <small><span class="ic" aria-hidden="true"></span>35</small>
+            </div>
+          </div>
+          <em class="chip">Open Now</em>
+        </div>
+      </div>
+      <div class="center">
+        <a class="btn-orange" href="#by-food">View All<span class="ic" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <section class="by-food" id="by-food">
+      <div class="container">
+        <div class="by-head">
+          <h2 class="title left">Search by Food</h2>
+          <div class="by-controls">
+            <a href="#popular">View All<span class="ic" aria-hidden="true"></span></a>
+            <div class="arrows">
+              <a href="#food-first" aria-label="Previous foods"><span class="ic" aria-hidden="true"></span></a
+              ><a href="#food-last" aria-label="Next foods"><span class="ic" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="food-circles">
+          <div id="food-first">
+            <img src="images/pizza.png" alt="Pizza" loading="lazy" />
+            <p>Pizza</p>
+          </div>
+          <div>
+            <img src="images/burger.png" alt="Burger" loading="lazy" />
+            <p>Burger</p>
+          </div>
+          <div>
+            <img src="images/noodles.png" alt="Noodles" loading="lazy" />
+            <p>Noodles</p>
+          </div>
+          <div>
+            <img src="images/sub-sandwich.png" alt="Sub-sandiwch" loading="lazy" />
+            <p>Sub-sandiwch</p>
+          </div>
+          <div>
+            <img src="images/chowmein.png" alt="Chowmein" loading="lazy" />
+            <p>Chowmein</p>
+          </div>
+          <div id="food-last">
+            <img src="images/steak.png" alt="Steak" loading="lazy" />
+            <p>Steak</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="strip-box">
+        <div class="strip-item">
+          <img src="icons/daily-discounts.svg" alt="" loading="lazy" /><b>Daily<br />Discounts</b>
+        </div>
+        <span class="strip-divider" aria-hidden="true"></span>
+        <div class="strip-item">
+          <img src="icons/live-tracing.svg" alt="" loading="lazy" /><b>Live<br />Tracing</b>
+        </div>
+        <span class="strip-divider" aria-hidden="true"></span>
+        <div class="strip-item">
+          <img src="icons/quick-delivery.svg" alt="" loading="lazy" /><b>Quick<br />Delivery</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="container deals">
+      <div class="deal">
+        <div class="deal-text">
+          <div>
+            <h3>Best deals <span>Crispy Sandwiches</span></h3>
+            <p>
+              Enjoy the large size of sandwiches. Complete<br class="desktop-break" />
+              perfect slice of sandwiches.
+            </p>
+          </div>
+          <a class="btn-orange" href="#order">Proceed to order<span class="ic" aria-hidden="true"></span></a>
+        </div>
+        <img src="images/sandwich-deal.png" alt="sandwich deal" loading="lazy" />
+      </div>
+      <div class="deal reverse">
+        <div class="deal-text">
+          <div>
+            <h3>Celebrate  parties<br />with <span>Fried Chicken</span></h3>
+            <p>
+              Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out<br
+                class="desktop-break"
+              />
+              best deals for fried chicken.
+            </p>
+          </div>
+          <a class="btn-orange" href="#order">Proceed to order<span class="ic" aria-hidden="true"></span></a>
+        </div>
+        <img src="images/chicken-deal.png" alt="chicken deal" loading="lazy" />
+      </div>
+      <div class="deal">
+        <div class="deal-text">
+          <div>
+            <h3>Wanna eat hot<br />&amp; spicy <span>Pizza?</span></h3>
+            <p>
+              Pair up with a friend and enjoy the<br class="desktop-break" />
+              hot and crispy pizza pops. Try it<br class="desktop-break" />
+              with the best deals.
+            </p>
+          </div>
+          <a class="btn-orange" href="#order">Proceed to order<span class="ic" aria-hidden="true"></span></a>
+        </div>
+        <img src="images/pizza-deal.png" alt="pizza deal" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-text">
+        <h2>Are you ready to order with the best deals?</h2>
+        <a class="btn-white" href="#order">Proceed to order<span class="ic" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h5>Our top cities</h5>
+        <div class="foot-grid cities">
+          <div>
+            <a href="#order">San Francisco</a><a href="#order">Miami</a><a href="#order">San Diego</a
+            ><a href="#order">East Bay</a><a href="#order">Long Beach</a>
+          </div>
+          <div>
+            <a href="#order">Los Angeles</a><a href="#order">Washington DC</a><a href="#order">Seattle</a
+            ><a href="#order">Portland</a><a href="#order">Nashville</a>
+          </div>
+          <div>
+            <a href="#order">New York City</a><a href="#order">Orange County</a><a href="#order">Atlanta</a
+            ><a href="#order">Charlotte</a><a href="#order">Denver</a>
+          </div>
+          <div>
+            <a href="#order">Chicago</a><a href="#order">Phoenix</a><a href="#order">Las Vegas</a
+            ><a href="#order">Sacramento</a><a href="#order">Oklahoma City</a>
+          </div>
+          <div>
+            <a href="#order">Columbus</a><a href="#order">New Mexico</a><a href="#order">Albuquerque</a
+            ><a href="#order">Sacramento</a><a href="#order">New Orleans</a>
+          </div>
+        </div>
+
+        <div class="foot-cols">
+          <div class="foot-menus">
+            <div>
+              <h5>Company</h5>
+              <div>
+                <a href="#footer">About us</a><a href="#footer">Team</a><a href="#footer">Careers</a
+                ><a href="#footer">Blog</a>
+              </div>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <div>
+                <a href="#footer">Help &amp; Support</a><a href="#footer">Partner with us</a
+                ><a href="#footer">Ride with us</a>
+              </div>
+            </div>
+            <div>
+              <h5>Legal</h5>
+              <div>
+                <a href="#footer">Terms &amp; Conditions</a><a href="#footer">Refund &amp; Cancellation</a
+                ><a href="#footer">Privacy Policy</a><a href="#footer">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+          <div class="sub">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <span class="ic brand" aria-hidden="true"></span><span class="ic brand" aria-hidden="true"></span
+              ><span class="ic brand" aria-hidden="true"></span>
+            </div>
+            <p>Receive exclusive offers in your mailbox</p>
+            <form class="sub-row">
+              <label
+                ><span class="ic" aria-hidden="true"></span
+                ><input type="email" placeholder="Enter Your email" aria-label="Enter Your email" required /></label
+              ><button class="btn-orange" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="copy">
+          <span>All rights Reserved <span class="ic regular" aria-hidden="true"></span> <b>Your Company, 2021</b></span
+          ><span
+            >Made with <span class="heart"><span class="ic" aria-hidden="true"></span></span> by
+            <b>Themewagon</b></span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
